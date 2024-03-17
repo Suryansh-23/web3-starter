@@ -46,7 +46,7 @@ const convert = async (to) => {
 
 // Function to connect to the wallet and get the balance
 const connect = async () => {
-    const [address] = await walletClient.requesgtAddresses(); // Request the address from the wallet
+    const [address] = await walletClient.requestAddresses(); // Request the address from the wallet
     connected = true; // Set the connected status to true
     btn.innerHTML = "Connected"; // Change the button text to "Connected"
 
